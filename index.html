@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEDUP ABILIO PAULO</title>
+    <link rel="stylesheet" href="style.css">
+
+     <!--link para conectar as funções do bootstrap com esse projeto -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Área de navegação do site (navbar) -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+        
+        <div class="container-fluid">
+            <!-- Titulo da página -->
+          <a class="navbar-brand" href="#inicio" style="color: rgb(207, 207, 0);">CEDUP ABILIO PAULO</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Área dos links -->
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="color: white; font-size: 18px;">Início</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white; font-size: 18px;">
+                  Explore
+                </a>
+                <ul class="dropdown-menu bg-dark">
+                  <li><a class="dropdown-item"  href="#" style="color: black;">Cursos</a></li>
+                  <li><a class="dropdown-item" href="#"  style="color: black;">Professores</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white; font-size: 18px;">Contato</a>
+              </li>
+              
+            </ul>
+            <form class="d-flex" role="procurar" style="color: rgb(207, 207, 0);">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Procurar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <main>
+      <article>
+          <!-- HeroSection -->
+          <div id="background">
+            <p id="textoGrande">
+                A <strong style="color: rgb(207, 207, 0);">MELHOR</strong> ESCOLA TÉCNICA <br> DE <strong style="color: rgb(207, 207, 0);">SANTA CATARINA</strong> <br> CONTENDO <strong style="color: rgb(207, 207, 0);">MAIS</strong> DE <br> 7 CURSOS <strong style="color: rgb(207, 207, 0);">GRATUITOS</strong>.
+            </p>
+          
+            <!-- Botão que abre o menu de cadastro -->
+            <div class="container mt-5 text-center">
+            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#cadastroModal" style="width: 140px; height: 40px; margin-top: 20px;">
+                Cadastre-se
+            </button>
+            </div>
+            <!-- Modal de Cadastro -->
+            <div class="modal fade" id="cadastroModal" tabindex="-1" aria-labelledby="cadastroModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cadastroModalLabel">Formulário de Cadastro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome:</label>
+                        <input type="text" class="form-control" id="nome" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail:</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="senha" class="form-label">Crie uma Senha:</label>
+                        <input type="password" class="form-control" id="senha" required>
+                    </div>
+                    <button type="submit" class="btn btn-warning">Cadastrar</button>
+                    </form>
+                </div>
+                </div>
+            </div>
+            </div>
+      </article>
+
+      <div style="background-color: rgb(46, 46, 46); width: auto; height: 40px; box-shadow: 3px 3px 3px black;">
+
+      </div>
+      
+        <section style="background: linear-gradient(to bottom, #303030, #363636);
+                 padding-top: 100px;">
+            <!-- Área de cursos técnicos -->
+            <h2 style="font-size: 130px; margin-left: 800px; padding-bottom: -250px; color: white; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                CURSOS
+            </h2>
+            </div>
+                <div class="card bg-dark" style="width: 300px; height: 520px; color: white;">
+                    <img src="imagens/info.jpg" class="card-img-top" alt="Curso Informática">
+                    <div class="card-body">
+                      <h4 class="card-title" style="font-size: 27px; ">Informática</h4>
+                      <hr>
+                      <p class="card-text" style="text-align: justify;">Curso técnico de informática para ter um amplo conhecimento das áreas de tecnologia mais requisitadas atualmente como Banco de Dados e Programação para Web.</p>
+                      <a href="#" class="btn btn-primary">Matricule-se</a>
+                    </div>
+                  </div>
+
+                  <div class="card bg-dark" style="width: 300px; height: 520px; color: white; margin: -320px 0px 0px 520px;">
+                    <img src="imagens/marketing.jpg" class="card-img-top" alt="Curso Marketing">
+                    <div class="card-body">
+                      <h4 class="card-title" style="font-size: 27px; ">Marketing</h4>
+                      <hr>
+                      <p class="card-text" style="text-align: justify;">Curso técnico de Marketing é o mais novo curso adicionado aos cursos existentes no cedup, contendo muitos asssuntos pertinentes para quem deseja seguir nesta área e fazer faculdade.</p>
+                      <a href="#" class="btn btn-primary">Matricule-se</a>
+                    </div>
+                  </div>
+
+                  <div class="card bg-dark" style="width: 300px; height: 520px; padding-bottom: 30px; color: white; margin: -320px 80px 0px 970px;">
+                    <img src="imagens/edifica.jpg" class="card-img-top" alt="Curso Edificações">
+                    <div class="card-body">
+                      <h4 class="card-title" style="font-size: 27px; ">Edificações</h4>
+                      <hr>
+                      <p class="card-text" style="text-align: justify;">Curso técnico de Edificações abrange muitas áreas pertinentes para criar uma carreira neste ramo de sucesso como: Arquitetura, materiais de construção e fazer cimento.</p>
+                      <a href="#" class="btn btn-primary">Matricule-se</a>
+                    </div>
+                  </div>
+                </section>
+    </main>
+</body>
+</html>
+
+      
